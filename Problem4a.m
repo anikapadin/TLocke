@@ -1,4 +1,4 @@
-csvperiodic = 'C:\Users\tyler\Desktop\School\PHYS1211\problem4\smallperiodictable.csv'
+csvperiodic = 'smallperiodictable.csv'
 datatable = readtable(csvperiodic)
 datastruct = table2struct(datatable)
 

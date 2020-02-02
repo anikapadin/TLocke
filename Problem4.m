@@ -1,3 +1,4 @@
+load('smallperiodictable')
 %question 1
 numdense = sum(density > .997)
 densenames = names(density > .997)
