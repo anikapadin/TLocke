@@ -9,3 +9,6 @@ Problem 3 checks out now that you have included the data file, however, then you
 
 ## Feb 9
 Problem 4 checks out, but there seems to be a undefined variable in your problem4a, make sure that you are clearing your workspace before running this program. The program may be running because some other variable `names` was left behind by `problem4.m`. The graphs from the climate program are looking good. Just some advice, though, `textscan` is a very micromanaging-y way of importing files - there are easier ways that don't resort to "hard coding" (such as in line 8 of `climate.m`, you needed to know how many lines were in the file, but what if I wanted the same file to process more of the same data? your program would fail).
+
+## Feb 17
+It looks like you updated problem 2 this week, specifically with the units. Right now, I can't get your program to work, I think you're trying to do too much with the string you take in a `T`. I would take a long look at what `T` is, what datatype? And proceed from there.
