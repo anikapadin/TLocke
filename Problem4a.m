@@ -4,7 +4,7 @@ datastruct = table2struct(datatable)
 
 %question 1
 densenames = sort(datatable.Element(datatable.Density > datatable.Density(80) & datatable.Isotopes < 30))
-densenum = numel(names)
+densenum = numel(densenames)
 %Question 2
 symbols = datatable.Symbol(datatable.DiscoveryYear>=1900 & datatable.DiscoveryYear<2000)
 avgweight = mean(datatable.AtomicWeight(datatable.DiscoveryYear>=1900 & datatable.DiscoveryYear<2000))

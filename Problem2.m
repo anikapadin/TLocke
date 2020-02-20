@@ -2,42 +2,49 @@
 G = 6.67408e-11;
 M = 5.972e24;
 R = 6.371e6;
-%get T here(minutes)
-T = strsplit(input("Period followed by unit(s/m/h/d) separated by commas: ", 's'), ',');
+%get times and units here
+T = strsplit(input("Period followed by unit(s/m/h/d) separated by commas: ", 's'), {',', ' '})
 T = strtrim(T);
-[nums, tf] = str2num(T)
-nums = nums(tf)
-units = T(~tf)
-while numel(nums) ~= numel(units)
-    error("Please enter only numeric values")
-    T = input("Period in minutes: ", 'x');
-    T = strtrim(T)
-    [nums, tf] = str2num(T)
-    nums = nums(tf)
-    units = T(~tf)
+%I used for loops here to handle the possibility of multiple inputs
+
+%get numeric values
+for ind = 1:numel(T)/2
+    [txt, true] = str2num(T{ind*2 - 1})
+    if true
+        nums(ind) = txt
+    else
+        error('please only enter numeric values and units')
+    end
 end
-%Convert T to seconds
-switch t
-    case 's'
-    case 'm'
-        T =  T * 60;
-    case 'h'
-        T = T * 3600
-    case 'd'
-        T = T * 3600 * 24
-    otherwise
-        error("Invalid Units")
+%get units
+for ind = 1:numel(T)/2
+    units(ind) = T{ind*2}
 end
 
-%Calculate height and velocity
-h = ((G*M*T.^2)/(4*pi^2)).^(1/3) - R;
-v = (2 * pi * (R + h))/T;
-%convert h to kilometers and print
-if h < 0
-    error("Orbit is impossible")
-else
-    h = h/1000;
-    disp(round(h, 3, "significant") + " km, " + round(v, 3, "significant") + " m/s")
+for ind = 1:numel(units)
+    time = nums(ind)
+    %convert time to seconds
+    switch units(ind)
+        case 's'
+        case 'm'
+            time =  time * 60;
+        case 'h'
+            time = time * 3600
+        case 'd'
+            time = time * 3600 * 24
+        otherwise
+            error("Invalid Units")
+    end
+    %Calculate height and velocity
+    h = ((G*M*time.^2)/(4*pi^2)).^(1/3) - R;
+    v = (2 * pi * (R + h))/time;
+    %convert h to kilometers and print
+    if h < 0
+        error("Orbit is impossible")
+    else
+        h = h/1000;
+        disp(round(h, 3, "significant") + " km, " + round(v, 3, "significant") + " m/s")
+    end
 end
 
 %answer questions here
