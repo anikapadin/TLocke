@@ -12,3 +12,7 @@ Problem 4 checks out, but there seems to be a undefined variable in your problem
 
 ## Feb 17
 It looks like you updated problem 2 this week, specifically with the units. Right now, I can't get your program to work, I think you're trying to do too much with the string you take in a `T`. I would take a long look at what `T` is, what datatype? And proceed from there.
+
+## Feb 24
+2b is works, but something very strange is going on - can you confirm this (it may be my machine, but I don't think so) - you run the program multiple times, it doesn't take new inputs - it just spits out the same results. Am I crazy?
+You have the barest of starts with projectile and problem 6 looks good, now don't forget that lesson!
