@@ -3,35 +3,35 @@ G = 6.67408e-11;
 M = 5.972e24;
 R = 6.371e6;
 %get times and units here
-T = strsplit(input("Period followed by unit(s/m/h/d) separated by commas: ", 's'), {',', ' '})
+T = strsplit(input("Period followed by unit(s/m/h/d) separated by commas: ", 's'), {',', ' '});
 T = strtrim(T);
 %I used for loops here to handle the possibility of multiple inputs
 
 %get numeric values
 for ind = 1:numel(T)/2
-    [txt, true] = str2num(T{ind*2 - 1})
+    [txt, true] = str2num(T{ind*2 - 1});
     if true
-        nums(ind) = txt
+        nums(ind) = txt;
     else
         error('please only enter numeric values and units')
     end
 end
 %get units
 for ind = 1:numel(T)/2
-    units(ind) = T{ind*2}
+    units(ind) = T{ind*2};
 end
 
 for ind = 1:numel(units)
-    time = nums(ind)
+    time = nums(ind);
     %convert time to seconds
     switch units(ind)
         case 's'
         case 'm'
             time =  time * 60;
         case 'h'
-            time = time * 3600
+            time = time * 3600;
         case 'd'
-            time = time * 3600 * 24
+            time = time * 3600 * 24;
         otherwise
             error("Invalid Units")
     end
