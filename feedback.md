@@ -16,3 +16,6 @@ It looks like you updated problem 2 this week, specifically with the units. Righ
 ## Feb 24
 2b is works, but something very strange is going on - can you confirm this (it may be my machine, but I don't think so) - you run the program multiple times, it doesn't take new inputs - it just spits out the same results. Am I crazy?
 You have the barest of starts with projectile and problem 6 looks good, now don't forget that lesson!
+
+## Update
+4a should be fixed and problem 5/projectile is more complete.  I think I bit off a bit more than I can chew trying to accept multiple inputs on 2b. 
