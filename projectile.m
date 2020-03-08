@@ -18,7 +18,7 @@ end
 if velocity < 0
     error("Please enter only positive velocities")
 end
-if unit != "mph" && unit != "ms"
+if unit ~= "mph" && unit ~= "ms"
     error("units must be either 'mph' or 'ms'")
 end
 if launchangle < 0 || launchangle > 90
