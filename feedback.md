@@ -23,3 +23,6 @@ You have the barest of starts with projectile and problem 6 looks good, now don'
 ## Mar 8
 Okay, 4a looks good, gives the correct results. Problem 5 is more complete, but has a syntax error on line 21 - it has to do with the meaning of `!` in MATLAB. I don't see anything else that should prevent the program from running correctly beyond that. 
 The encoded program that you have seems good, you decode the secret message, exactly.
+
+## Mar 8 Update
+Fixed that syntax error in projectile.  
