@@ -21,4 +21,5 @@ You have the barest of starts with projectile and problem 6 looks good, now don'
 4a should be fixed and problem 5/projectile is more complete.  I think I bit off a bit more than I can chew trying to accept multiple inputs on 2b. 
 
 ## Mar 8
-Okay, 4a looks good, gives the correct results. Problem 5 is more complete, but has a syntax error on line 21 - it has to do with the meaning of `!` in MATLAB. I don't see anything else that should prevent the program from running correctly beyond that.
+Okay, 4a looks good, gives the correct results. Problem 5 is more complete, but has a syntax error on line 21 - it has to do with the meaning of `!` in MATLAB. I don't see anything else that should prevent the program from running correctly beyond that. 
+The encoded program that you have seems good, you decode the secret message, exactly.
