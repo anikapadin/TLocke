@@ -26,3 +26,5 @@ The encoded program that you have seems good, you decode the secret message, exa
 
 ## Mar 8 Update
 Fixed that syntax error in projectile.  
+## Mar 16
+Yes, you did and as expected, it runs just fine. I would suggest that you suppress all the output coming form this function that appears in the command window.
