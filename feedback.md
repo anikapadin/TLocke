@@ -29,3 +29,7 @@ Fixed that syntax error in projectile.
 ## Mar 16
 Yes, you did and as expected, it runs just fine. I would suggest that you suppress all the output coming form this function that appears in the command window.
 However, I don't see any project summary from you, are you in a group?
+
+## Update
+Not sure why my summary didn't get through.  I copied it into a word document and pushed it with this.  Let me know if you're still having issues.
+I also finished 6a, 7a, and the first project so I believe I am all caught up on outstading work at the moment.
