@@ -38,3 +38,5 @@ I also finished 6a, 7a, and the first project so I believe I am all caught up on
 I don't know why I missed it, but this sounds like a great project that will continue beyond this semester. With the shutdown, will you still be able to make headway on this project? I hope the simulations are still doable - if you don't produce the results that you were hoping, you can always focus on the program itself and explaining how it works/what you've learned about it.
 Problem 6a looks good, the only comment is to make sure that you include comments, such as "this function takes angles in radians", so that you know if you ever come back to this function that it does. 7a looks good too. Very nice and concise code used to write to the excel sheet. 
 Your ptable is a thing a beauty, I think the only suggestion I have is you might want to set varargin{k} to a less annoying more descriptive variable at the beginning, but that is fairly nitpicky. And you went the extra mile with the stability functionality.
+## Mar 30
+I think you're all caught up so I didn't see anything new.
