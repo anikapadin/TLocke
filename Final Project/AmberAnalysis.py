@@ -59,8 +59,5 @@ mp.xlabel("Simulation Time(ps)")
 mp.ylabel("Volume")
 mp.show()
 
-
-
-
-
 import numpy as np
+#RMSD Window
